@@ -1,0 +1,6 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../../ddsseventh.gen/sources_1/bd/ddsseventh/ipshared/7698" \
+"ddsseventh_time_synth.v" \
+
+# Do not sort compile order
+nosort

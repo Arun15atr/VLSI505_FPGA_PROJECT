@@ -1,0 +1,7 @@
+vhdl xil_defaultlib  \
+"../../../../ddsseventh.gen/sources_1/bd/ddsseventh/ip/ddsseventh_dds_compiler_0_0/sim/ddsseventh_dds_compiler_0_0.vhd" \
+"../../../../ddsseventh.gen/sources_1/bd/ddsseventh/ip/ddsseventh_dds_compiler_1_0/sim/ddsseventh_dds_compiler_1_0.vhd" \
+"../../../../ddsseventh.gen/sources_1/bd/ddsseventh/ip/ddsseventh_mult_gen_0_3/sim/ddsseventh_mult_gen_0_3.vhd" \
+"../../../../ddsseventh.gen/sources_1/bd/ddsseventh/ip/ddsseventh_mult_gen_1_0/sim/ddsseventh_mult_gen_1_0.vhd" \
+
+nosort

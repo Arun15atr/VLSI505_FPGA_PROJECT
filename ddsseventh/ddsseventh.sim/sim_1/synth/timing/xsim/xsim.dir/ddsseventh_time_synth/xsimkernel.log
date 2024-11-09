@@ -1,0 +1,7 @@
+Running: xsim.dir/ddsseventh_time_synth/xsimk -simmode gui -wdb ddsseventh_time_synth.wdb -simrunnum 0 -socket 57745
+Design successfully loaded
+Design Loading Memory Usage: 134300 KB (Peak: 134300 KB)
+Design Loading CPU Usage: 170 ms
+Simulation completed
+Simulation Memory Usage: 217948 KB (Peak: 273568 KB)
+Simulation CPU Usage: 260 ms

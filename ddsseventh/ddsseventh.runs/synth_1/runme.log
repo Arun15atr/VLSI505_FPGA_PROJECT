@@ -1,0 +1,325 @@
+
+*** Running vivado
+    with args -log ddsseventh.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source ddsseventh.tcl
+
+
+****** Vivado v2022.2 (64-bit)
+  **** SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source ddsseventh.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/arun/tools/Xilinx/Vivado/2022.2/data/ip'.
+Command: read_checkpoint -auto_incremental -incremental /home/arun/FPGA_Ultra_new/Keep_Safe_FPGA/ddsseventh/ddsseventh.srcs/utils_1/imports/synth_1/ddsseventh.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from /home/arun/FPGA_Ultra_new/Keep_Safe_FPGA/ddsseventh/ddsseventh.srcs/utils_1/imports/synth_1/ddsseventh.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top ddsseventh -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 500412
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/home/arun/tools/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1961.992 ; gain = 369.770 ; free physical = 1182 ; free virtual = 9344
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1383.818; parent = 1179.145; children = 204.674
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 2937.910; parent = 1964.965; children = 972.945
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'ddsseventh' [/home/arun/FPGA_Ultra_new/Keep_Safe_FPGA/ddsseventh/ddsseventh.gen/sources_1/bd/ddsseventh/synth/ddsseventh.v:12]
+INFO: [Synth 8-6157] synthesizing module 'ddsseventh_clk_wiz_0_0' [/home/arun/FPGA_Ultra_new/Keep_Safe_FPGA/ddsseventh/ddsseventh.runs/synth_1/.Xil/Vivado-500372-arun/realtime/ddsseventh_clk_wiz_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'ddsseventh_clk_wiz_0_0' (0#1) [/home/arun/FPGA_Ultra_new/Keep_Safe_FPGA/ddsseventh/ddsseventh.runs/synth_1/.Xil/Vivado-500372-arun/realtime/ddsseventh_clk_wiz_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'ddsseventh_dds_compiler_0_0' [/home/arun/FPGA_Ultra_new/Keep_Safe_FPGA/ddsseventh/ddsseventh.runs/synth_1/.Xil/Vivado-500372-arun/realtime/ddsseventh_dds_compiler_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'ddsseventh_dds_compiler_0_0' (0#1) [/home/arun/FPGA_Ultra_new/Keep_Safe_FPGA/ddsseventh/ddsseventh.runs/synth_1/.Xil/Vivado-500372-arun/realtime/ddsseventh_dds_compiler_0_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'm_axis_data_tvalid' of module 'ddsseventh_dds_compiler_0_0' is unconnected for instance 'dds_compiler_0' [/home/arun/FPGA_Ultra_new/Keep_Safe_FPGA/ddsseventh/ddsseventh.gen/sources_1/bd/ddsseventh/synth/ddsseventh.v:35]
+WARNING: [Synth 8-7023] instance 'dds_compiler_0' of module 'ddsseventh_dds_compiler_0_0' has 3 connections declared, but only 2 given [/home/arun/FPGA_Ultra_new/Keep_Safe_FPGA/ddsseventh/ddsseventh.gen/sources_1/bd/ddsseventh/synth/ddsseventh.v:35]
+INFO: [Synth 8-6157] synthesizing module 'ddsseventh_dds_compiler_1_0' [/home/arun/FPGA_Ultra_new/Keep_Safe_FPGA/ddsseventh/ddsseventh.runs/synth_1/.Xil/Vivado-500372-arun/realtime/ddsseventh_dds_compiler_1_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'ddsseventh_dds_compiler_1_0' (0#1) [/home/arun/FPGA_Ultra_new/Keep_Safe_FPGA/ddsseventh/ddsseventh.runs/synth_1/.Xil/Vivado-500372-arun/realtime/ddsseventh_dds_compiler_1_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'm_axis_data_tvalid' of module 'ddsseventh_dds_compiler_1_0' is unconnected for instance 'dds_compiler_1' [/home/arun/FPGA_Ultra_new/Keep_Safe_FPGA/ddsseventh/ddsseventh.gen/sources_1/bd/ddsseventh/synth/ddsseventh.v:38]
+WARNING: [Synth 8-7023] instance 'dds_compiler_1' of module 'ddsseventh_dds_compiler_1_0' has 3 connections declared, but only 2 given [/home/arun/FPGA_Ultra_new/Keep_Safe_FPGA/ddsseventh/ddsseventh.gen/sources_1/bd/ddsseventh/synth/ddsseventh.v:38]
+INFO: [Synth 8-6157] synthesizing module 'ddsseventh_fir_compiler_0_0' [/home/arun/FPGA_Ultra_new/Keep_Safe_FPGA/ddsseventh/ddsseventh.runs/synth_1/.Xil/Vivado-500372-arun/realtime/ddsseventh_fir_compiler_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'ddsseventh_fir_compiler_0_0' (0#1) [/home/arun/FPGA_Ultra_new/Keep_Safe_FPGA/ddsseventh/ddsseventh.runs/synth_1/.Xil/Vivado-500372-arun/realtime/ddsseventh_fir_compiler_0_0_stub.v:5]
+WARNING: [Synth 8-7071] port 's_axis_data_tready' of module 'ddsseventh_fir_compiler_0_0' is unconnected for instance 'fir_compiler_0' [/home/arun/FPGA_Ultra_new/Keep_Safe_FPGA/ddsseventh/ddsseventh.gen/sources_1/bd/ddsseventh/synth/ddsseventh.v:41]
+WARNING: [Synth 8-7071] port 'm_axis_data_tvalid' of module 'ddsseventh_fir_compiler_0_0' is unconnected for instance 'fir_compiler_0' [/home/arun/FPGA_Ultra_new/Keep_Safe_FPGA/ddsseventh/ddsseventh.gen/sources_1/bd/ddsseventh/synth/ddsseventh.v:41]
+WARNING: [Synth 8-7023] instance 'fir_compiler_0' of module 'ddsseventh_fir_compiler_0_0' has 6 connections declared, but only 4 given [/home/arun/FPGA_Ultra_new/Keep_Safe_FPGA/ddsseventh/ddsseventh.gen/sources_1/bd/ddsseventh/synth/ddsseventh.v:41]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/home/arun/FPGA_Ultra_new/Keep_Safe_FPGA/ddsseventh/ddsseventh.gen/sources_1/bd/ddsseventh/synth/ddsseventh.v:46]
+INFO: [Synth 8-6157] synthesizing module 'ddsseventh_ila_0_0' [/home/arun/FPGA_Ultra_new/Keep_Safe_FPGA/ddsseventh/ddsseventh.runs/synth_1/.Xil/Vivado-500372-arun/realtime/ddsseventh_ila_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'ddsseventh_ila_0_0' (0#1) [/home/arun/FPGA_Ultra_new/Keep_Safe_FPGA/ddsseventh/ddsseventh.runs/synth_1/.Xil/Vivado-500372-arun/realtime/ddsseventh_ila_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'ddsseventh_mult_gen_0_3' [/home/arun/FPGA_Ultra_new/Keep_Safe_FPGA/ddsseventh/ddsseventh.runs/synth_1/.Xil/Vivado-500372-arun/realtime/ddsseventh_mult_gen_0_3_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'ddsseventh_mult_gen_0_3' (0#1) [/home/arun/FPGA_Ultra_new/Keep_Safe_FPGA/ddsseventh/ddsseventh.runs/synth_1/.Xil/Vivado-500372-arun/realtime/ddsseventh_mult_gen_0_3_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'ddsseventh_mult_gen_1_0' [/home/arun/FPGA_Ultra_new/Keep_Safe_FPGA/ddsseventh/ddsseventh.runs/synth_1/.Xil/Vivado-500372-arun/realtime/ddsseventh_mult_gen_1_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'ddsseventh_mult_gen_1_0' (0#1) [/home/arun/FPGA_Ultra_new/Keep_Safe_FPGA/ddsseventh/ddsseventh.runs/synth_1/.Xil/Vivado-500372-arun/realtime/ddsseventh_mult_gen_1_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'ddsseventh_xlconstant_0_0' [/home/arun/FPGA_Ultra_new/Keep_Safe_FPGA/ddsseventh/ddsseventh.gen/sources_1/bd/ddsseventh/ip/ddsseventh_xlconstant_0_0/synth/ddsseventh_xlconstant_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_7_xlconstant' [/home/arun/FPGA_Ultra_new/Keep_Safe_FPGA/ddsseventh/ddsseventh.gen/sources_1/bd/ddsseventh/ipshared/badb/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_7_xlconstant' (0#1) [/home/arun/FPGA_Ultra_new/Keep_Safe_FPGA/ddsseventh/ddsseventh.gen/sources_1/bd/ddsseventh/ipshared/badb/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ddsseventh_xlconstant_0_0' (0#1) [/home/arun/FPGA_Ultra_new/Keep_Safe_FPGA/ddsseventh/ddsseventh.gen/sources_1/bd/ddsseventh/ip/ddsseventh_xlconstant_0_0/synth/ddsseventh_xlconstant_0_0.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'ddsseventh' (0#1) [/home/arun/FPGA_Ultra_new/Keep_Safe_FPGA/ddsseventh/ddsseventh.gen/sources_1/bd/ddsseventh/synth/ddsseventh.v:12]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'dds_compiler_0'. This will prevent further optimization [/home/arun/FPGA_Ultra_new/Keep_Safe_FPGA/ddsseventh/ddsseventh.gen/sources_1/bd/ddsseventh/synth/ddsseventh.v:35]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'mult_gen_0'. This will prevent further optimization [/home/arun/FPGA_Ultra_new/Keep_Safe_FPGA/ddsseventh/ddsseventh.gen/sources_1/bd/ddsseventh/synth/ddsseventh.v:53]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ila_0'. This will prevent further optimization [/home/arun/FPGA_Ultra_new/Keep_Safe_FPGA/ddsseventh/ddsseventh.gen/sources_1/bd/ddsseventh/synth/ddsseventh.v:46]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'dds_compiler_1'. This will prevent further optimization [/home/arun/FPGA_Ultra_new/Keep_Safe_FPGA/ddsseventh/ddsseventh.gen/sources_1/bd/ddsseventh/synth/ddsseventh.v:38]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'mult_gen_1'. This will prevent further optimization [/home/arun/FPGA_Ultra_new/Keep_Safe_FPGA/ddsseventh/ddsseventh.gen/sources_1/bd/ddsseventh/synth/ddsseventh.v:58]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'fir_compiler_0'. This will prevent further optimization [/home/arun/FPGA_Ultra_new/Keep_Safe_FPGA/ddsseventh/ddsseventh.gen/sources_1/bd/ddsseventh/synth/ddsseventh.v:41]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2033.930 ; gain = 441.707 ; free physical = 1247 ; free virtual = 9409
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1383.818; parent = 1179.145; children = 204.674
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3006.879; parent = 2033.934; children = 972.945
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2051.742 ; gain = 459.520 ; free physical = 1247 ; free virtual = 9409
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1383.818; parent = 1179.145; children = 204.674
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3024.691; parent = 2051.746; children = 972.945
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2051.742 ; gain = 459.520 ; free physical = 1247 ; free virtual = 9409
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1383.818; parent = 1179.145; children = 204.674
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3024.691; parent = 2051.746; children = 972.945
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2051.742 ; gain = 0.000 ; free physical = 1254 ; free virtual = 9417
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/arun/FPGA_Ultra_new/Keep_Safe_FPGA/ddsseventh/ddsseventh.gen/sources_1/bd/ddsseventh/ip/ddsseventh_dds_compiler_0_0/ddsseventh_dds_compiler_0_0/ddsseventh_dds_compiler_0_0_in_context.xdc] for cell 'dds_compiler_0'
+Finished Parsing XDC File [/home/arun/FPGA_Ultra_new/Keep_Safe_FPGA/ddsseventh/ddsseventh.gen/sources_1/bd/ddsseventh/ip/ddsseventh_dds_compiler_0_0/ddsseventh_dds_compiler_0_0/ddsseventh_dds_compiler_0_0_in_context.xdc] for cell 'dds_compiler_0'
+Parsing XDC File [/home/arun/FPGA_Ultra_new/Keep_Safe_FPGA/ddsseventh/ddsseventh.gen/sources_1/bd/ddsseventh/ip/ddsseventh_clk_wiz_0_0/ddsseventh_clk_wiz_0_0/ddsseventh_clk_wiz_0_0_in_context.xdc] for cell 'clk_wiz_0'
+Finished Parsing XDC File [/home/arun/FPGA_Ultra_new/Keep_Safe_FPGA/ddsseventh/ddsseventh.gen/sources_1/bd/ddsseventh/ip/ddsseventh_clk_wiz_0_0/ddsseventh_clk_wiz_0_0/ddsseventh_clk_wiz_0_0_in_context.xdc] for cell 'clk_wiz_0'
+Parsing XDC File [/home/arun/FPGA_Ultra_new/Keep_Safe_FPGA/ddsseventh/ddsseventh.gen/sources_1/bd/ddsseventh/ip/ddsseventh_ila_0_0/ddsseventh_ila_0_0/ddsseventh_ila_0_0_in_context.xdc] for cell 'ila_0'
+Finished Parsing XDC File [/home/arun/FPGA_Ultra_new/Keep_Safe_FPGA/ddsseventh/ddsseventh.gen/sources_1/bd/ddsseventh/ip/ddsseventh_ila_0_0/ddsseventh_ila_0_0/ddsseventh_ila_0_0_in_context.xdc] for cell 'ila_0'
+Parsing XDC File [/home/arun/FPGA_Ultra_new/Keep_Safe_FPGA/ddsseventh/ddsseventh.gen/sources_1/bd/ddsseventh/ip/ddsseventh_dds_compiler_1_0/ddsseventh_dds_compiler_1_0/ddsseventh_dds_compiler_1_0_in_context.xdc] for cell 'dds_compiler_1'
+Finished Parsing XDC File [/home/arun/FPGA_Ultra_new/Keep_Safe_FPGA/ddsseventh/ddsseventh.gen/sources_1/bd/ddsseventh/ip/ddsseventh_dds_compiler_1_0/ddsseventh_dds_compiler_1_0/ddsseventh_dds_compiler_1_0_in_context.xdc] for cell 'dds_compiler_1'
+Parsing XDC File [/home/arun/FPGA_Ultra_new/Keep_Safe_FPGA/ddsseventh/ddsseventh.gen/sources_1/bd/ddsseventh/ip/ddsseventh_mult_gen_0_3/ddsseventh_mult_gen_0_3/ddsseventh_mult_gen_0_3_in_context.xdc] for cell 'mult_gen_0'
+Finished Parsing XDC File [/home/arun/FPGA_Ultra_new/Keep_Safe_FPGA/ddsseventh/ddsseventh.gen/sources_1/bd/ddsseventh/ip/ddsseventh_mult_gen_0_3/ddsseventh_mult_gen_0_3/ddsseventh_mult_gen_0_3_in_context.xdc] for cell 'mult_gen_0'
+Parsing XDC File [/home/arun/FPGA_Ultra_new/Keep_Safe_FPGA/ddsseventh/ddsseventh.gen/sources_1/bd/ddsseventh/ip/ddsseventh_fir_compiler_0_0/ddsseventh_fir_compiler_0_0/ddsseventh_fir_compiler_0_0_in_context.xdc] for cell 'fir_compiler_0'
+Finished Parsing XDC File [/home/arun/FPGA_Ultra_new/Keep_Safe_FPGA/ddsseventh/ddsseventh.gen/sources_1/bd/ddsseventh/ip/ddsseventh_fir_compiler_0_0/ddsseventh_fir_compiler_0_0/ddsseventh_fir_compiler_0_0_in_context.xdc] for cell 'fir_compiler_0'
+Parsing XDC File [/home/arun/FPGA_Ultra_new/Keep_Safe_FPGA/ddsseventh/ddsseventh.gen/sources_1/bd/ddsseventh/ip/ddsseventh_mult_gen_1_0/ddsseventh_mult_gen_1_0/ddsseventh_mult_gen_0_3_in_context.xdc] for cell 'mult_gen_1'
+Finished Parsing XDC File [/home/arun/FPGA_Ultra_new/Keep_Safe_FPGA/ddsseventh/ddsseventh.gen/sources_1/bd/ddsseventh/ip/ddsseventh_mult_gen_1_0/ddsseventh_mult_gen_1_0/ddsseventh_mult_gen_0_3_in_context.xdc] for cell 'mult_gen_1'
+Parsing XDC File [/home/arun/FPGA_Ultra_new/Keep_Safe_FPGA/ddsseventh/ddsseventh.srcs/constrs_1/new/ddsseventh.xdc]
+CRITICAL WARNING: [Netlist 29-154] Cannot set property 'CLOCK_BUFFER_TYPE' because incorrect value 'BUF' specified. Expecting type 'enum' with possible values of 'BUFG,BUFGCE,BUFH,BUFIO,BUFMR,BUFG_FABRIC,BUFR,NONE'. [/home/arun/FPGA_Ultra_new/Keep_Safe_FPGA/ddsseventh/ddsseventh.srcs/constrs_1/new/ddsseventh.xdc:4]
+Resolution: Please check the value of the property and set to a correct value.
+Finished Parsing XDC File [/home/arun/FPGA_Ultra_new/Keep_Safe_FPGA/ddsseventh/ddsseventh.srcs/constrs_1/new/ddsseventh.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/arun/FPGA_Ultra_new/Keep_Safe_FPGA/ddsseventh/ddsseventh.srcs/constrs_1/new/ddsseventh.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/ddsseventh_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/ddsseventh_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [/home/arun/FPGA_Ultra_new/Keep_Safe_FPGA/ddsseventh/ddsseventh.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/arun/FPGA_Ultra_new/Keep_Safe_FPGA/ddsseventh/ddsseventh.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2124.680 ; gain = 0.000 ; free physical = 1196 ; free virtual = 9359
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2124.680 ; gain = 0.000 ; free physical = 1196 ; free virtual = 9359
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/home/arun/tools/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2124.680 ; gain = 532.457 ; free physical = 1260 ; free virtual = 9422
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1383.818; parent = 1179.145; children = 204.674
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3065.613; parent = 2092.668; children = 972.945
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2124.680 ; gain = 532.457 ; free physical = 1260 ; free virtual = 9422
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1383.818; parent = 1179.145; children = 204.674
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3065.613; parent = 2092.668; children = 972.945
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clock. (constraint file  /home/arun/FPGA_Ultra_new/Keep_Safe_FPGA/ddsseventh/ddsseventh.gen/sources_1/bd/ddsseventh/ip/ddsseventh_clk_wiz_0_0/ddsseventh_clk_wiz_0_0/ddsseventh_clk_wiz_0_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clock. (constraint file  /home/arun/FPGA_Ultra_new/Keep_Safe_FPGA/ddsseventh/ddsseventh.gen/sources_1/bd/ddsseventh/ip/ddsseventh_clk_wiz_0_0/ddsseventh_clk_wiz_0_0/ddsseventh_clk_wiz_0_0_in_context.xdc, line 4).
+Applied set_property KEEP_HIERARCHY = SOFT for dds_compiler_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for clk_wiz_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for ila_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for dds_compiler_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for mult_gen_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for fir_compiler_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for xlconstant_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for mult_gen_1. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2124.680 ; gain = 532.457 ; free physical = 1260 ; free virtual = 9422
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1383.818; parent = 1179.145; children = 204.674
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3065.613; parent = 2092.668; children = 972.945
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2124.680 ; gain = 532.457 ; free physical = 1262 ; free virtual = 9425
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1383.818; parent = 1179.145; children = 204.674
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3065.613; parent = 2092.668; children = 972.945
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2124.680 ; gain = 532.457 ; free physical = 1273 ; free virtual = 9440
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1383.818; parent = 1179.145; children = 204.674
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3065.613; parent = 2092.668; children = 972.945
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2124.680 ; gain = 532.457 ; free physical = 1180 ; free virtual = 9346
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1461.157; parent = 1256.525; children = 204.674
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3065.613; parent = 2092.668; children = 972.945
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2124.680 ; gain = 532.457 ; free physical = 1180 ; free virtual = 9346
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1461.345; parent = 1256.713; children = 204.674
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3065.613; parent = 2092.668; children = 972.945
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2124.680 ; gain = 532.457 ; free physical = 1178 ; free virtual = 9345
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1461.833; parent = 1257.201; children = 204.674
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3065.613; parent = 2092.668; children = 972.945
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2124.680 ; gain = 532.457 ; free physical = 1189 ; free virtual = 9355
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1462.028; parent = 1257.396; children = 204.674
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3065.613; parent = 2092.668; children = 972.945
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2124.680 ; gain = 532.457 ; free physical = 1189 ; free virtual = 9355
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1462.044; parent = 1257.412; children = 204.674
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3065.613; parent = 2092.668; children = 972.945
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2124.680 ; gain = 532.457 ; free physical = 1189 ; free virtual = 9355
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1462.060; parent = 1257.428; children = 204.674
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3065.613; parent = 2092.668; children = 972.945
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2124.680 ; gain = 532.457 ; free physical = 1189 ; free virtual = 9355
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1462.122; parent = 1257.490; children = 204.674
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3065.613; parent = 2092.668; children = 972.945
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2124.680 ; gain = 532.457 ; free physical = 1189 ; free virtual = 9355
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1462.122; parent = 1257.490; children = 204.674
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3065.613; parent = 2092.668; children = 972.945
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2124.680 ; gain = 532.457 ; free physical = 1189 ; free virtual = 9355
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1462.138; parent = 1257.506; children = 204.674
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3065.613; parent = 2092.668; children = 972.945
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+----------------------------+----------+
+|      |BlackBox name               |Instances |
++------+----------------------------+----------+
+|1     |ddsseventh_clk_wiz_0_0      |         1|
+|2     |ddsseventh_dds_compiler_0_0 |         1|
+|3     |ddsseventh_dds_compiler_1_0 |         1|
+|4     |ddsseventh_fir_compiler_0_0 |         1|
+|5     |ddsseventh_ila_0_0          |         1|
+|6     |ddsseventh_mult_gen_0_3     |         1|
+|7     |ddsseventh_mult_gen_1_0     |         1|
++------+----------------------------+----------+
+
+Report Cell Usage: 
++------+--------------------------+------+
+|      |Cell                      |Count |
++------+--------------------------+------+
+|1     |ddsseventh_clk_wiz_0      |     1|
+|2     |ddsseventh_dds_compiler_0 |     1|
+|3     |ddsseventh_dds_compiler_1 |     1|
+|4     |ddsseventh_fir_compiler_0 |     1|
+|5     |ddsseventh_ila_0          |     1|
+|6     |ddsseventh_mult_gen_0     |     1|
+|7     |ddsseventh_mult_gen_1     |     1|
+|8     |IBUF                      |     1|
++------+--------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2124.680 ; gain = 532.457 ; free physical = 1189 ; free virtual = 9355
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1462.169; parent = 1257.537; children = 204.674
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3065.613; parent = 2092.668; children = 972.945
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 2124.680 ; gain = 459.520 ; free physical = 1235 ; free virtual = 9402
+Synthesis Optimization Complete : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2124.680 ; gain = 532.457 ; free physical = 1236 ; free virtual = 9403
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2124.680 ; gain = 0.000 ; free physical = 1320 ; free virtual = 9487
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2124.680 ; gain = 0.000 ; free physical = 1274 ; free virtual = 9441
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: ef32746f
+INFO: [Common 17-83] Releasing license: Synthesis
+50 Infos, 9 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2124.680 ; gain = 837.621 ; free physical = 1443 ; free virtual = 9610
+INFO: [Common 17-600] The following parameters have non-default value.
+tcl.collectionResultDisplayLimit
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Common 17-1381] The checkpoint '/home/arun/FPGA_Ultra_new/Keep_Safe_FPGA/ddsseventh/ddsseventh.runs/synth_1/ddsseventh.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file ddsseventh_utilization_synth.rpt -pb ddsseventh_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Nov  9 18:15:36 2024...

@@ -1,0 +1,9 @@
+verilog xil_defaultlib --include "../../../../ddsseventh.gen/sources_1/bd/ddsseventh/ipshared/7698" --include "../../../../ddsseventh.gen/sources_1/bd/ddsseventh/ipshared/1b7e/hdl/verilog" --include "../../../../ddsseventh.gen/sources_1/bd/ddsseventh/ipshared/122e/hdl/verilog" --include "../../../../ddsseventh.gen/sources_1/bd/ddsseventh/ipshared/b205/hdl/verilog" --include "../../../../ddsseventh.gen/sources_1/bd/ddsseventh/ipshared/fd26/hdl/verilog" \
+"../../../../ddsseventh.gen/sources_1/bd/ddsseventh/ip/ddsseventh_clk_wiz_0_0/ddsseventh_clk_wiz_0_0_clk_wiz.v" \
+"../../../../ddsseventh.gen/sources_1/bd/ddsseventh/ip/ddsseventh_clk_wiz_0_0/ddsseventh_clk_wiz_0_0.v" \
+"../../../../ddsseventh.gen/sources_1/bd/ddsseventh/ip/ddsseventh_ila_0_0/sim/ddsseventh_ila_0_0.v" \
+"../../../../ddsseventh.gen/sources_1/bd/ddsseventh/sim/ddsseventh.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort
